@@ -4,4 +4,9 @@ app.all('/', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
+app.all('/home', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Halo zidan')
+})
+
 app.listen(process.env.PORT || 3000)
